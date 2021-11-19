@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+
+h1, p, input {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.speechContainer {
+    margin: 20px;
+}
+
+.speechTranscript {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.speech-text {
+    font-size: 18px;
+    text-align: center;
+    border: 5px solid rgb(0, 110, 255);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.submitButton {
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+    border: 2px solid rgb(0, 110, 255);
+    border-radius: 30px;
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
+.submitButton:hover {
+    color: white;
+    background-color: rgb(0, 110, 255);
+    cursor: pointer;
+}

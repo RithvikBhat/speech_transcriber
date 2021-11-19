@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Style -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+    <!-- CSS -->
+    <title>Speech Recognition</title>
+</head>
+
+<body>
+    <div class="speechContainer">
+        <h1>Upload Audio File</h1>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <br>
+            <input type="submit" value="Transcribe" class="submitButton">
+        </form>
+    </div>
+
+    {% if transcript != "" %}
+    <div class="speechTranscript">
+        <h1>Transcript:</h1>
+        <p class="speech-text">{{ transcript }}</p>
+    </div>
+    {% endif %}
+</body>
+
+</html>
